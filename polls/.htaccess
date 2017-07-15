@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^([0-9]+)$ /poll.php?id=$1
+RewriteRule ^submit/([0-9]+)$ /submit.php?id=$1
+RewriteRule ^result/([0-9]+)$ /result.php?id=$1
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
