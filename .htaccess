@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^([0-9A-Za-z\-]+)$ /route.php?slug=$1
+ErrorDocument 404 /404.php
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
